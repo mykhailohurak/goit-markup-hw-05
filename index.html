@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,9 +21,15 @@
         <nav class="header-navigation">
             <a class="header-logo link" href="index.html">Web<span class="header-logo-two">Studio</a>
             <ul class="list nav-list">
-                <li class="nav-item"><a class="link nav-link current" href="index.html">Студія</a></li>
-                <li class="nav-item"><a class="link nav-link" href="portfolio.html">Портфоліо</a></li>
-                <li class="nav-item"><a class="link nav-link" href="">Контакти</a></li>
+                <li class="nav-item">
+                    <a class="link nav-link current" href="index.html">Студія</a>
+                </li>
+                <li class="nav-item">
+                    <a class="link nav-link" href="portfolio.html">Портфоліо</a>
+                </li>
+                <li class="nav-item">
+                    <a class="link nav-link" href="">Контакти</a>
+                </li>
             </ul>
         </nav>
         <ul class="list contacts-list">
@@ -48,7 +55,7 @@
 <section class="hero hero-background">
     <div class="container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="hero-btn" type="button">Замовити послугу</button>
+        <button class="hero-btn" type="button" data-modal-open>Замовити послугу</button>
     </div>
 </section>
 
@@ -103,22 +110,25 @@
         <h2 class="section-title">Чим ми займаємось</h2>
         <ul class="list doing-list">
             <li class="doing-item">
-                <img class="doing-img" 
-                     src="./images/what-are-we-doing-img1.jpg"
-                     alt="Розробка для десктопних пристроїв" 
-                     width="370" height="294">
+                <img class="doing-img" src="./images/what-are-we-doing-img1.jpg"
+                    alt="Десктопні додатки" width="370" height="294">
+                <div class="doing-description">
+                    <p class="doing-description-text">Десктопні додатки</p>
+                </div>
             </li>
             <li class="doing-item">
-                <img class="doing-img" 
-                     src="./images/what-are-we-doing-img2.jpg"
-                     alt="Розробка для мобільних пристроїв" 
-                     width="370" height="294">
+                <img class="doing-img" src="./images/what-are-we-doing-img2.jpg"
+                    alt="Мобільні додатки" width="370" height="294">
+                <div class="doing-description">
+                    <p class="doing-description-text">Мобільні додатки</p>
+                </div>
             </li>
             <li class="doing-item">
-                <img class="doing-img" 
-                     src="./images/what-are-we-doing-img3.jpg"
-                     alt="Розробка для лептопних пристроїв" 
-                     width="370" height="294">
+                <img class="doing-img" src="./images/what-are-we-doing-img3.jpg"
+                    alt="Дизайнерські рішення" width="370" height="294">
+                <div class="doing-description">
+                    <p class="doing-description-text">Дизайнерські рішення</p>
+                </div>
             </li>
         </ul>
     </div>
