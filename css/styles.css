@@ -697,3 +697,71 @@ ul {
   letter-spacing: 0.03em;
   color: var(--color-text);
 }
+
+/* Modal Window ------------------------------ */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 1000ms, visibility 1000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  background-color: rgb(98, 0, 255);
+  transform: rotate(180deg);
+  height: 200%;
+  width: 0;
+}
+
+.modal-button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  padding: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-button-close:hover,
+.modal-button-close:focus {
+  fill: var(--color-accent);
+  cursor: pointer;
+}
+
+.modal {
+  transition-property: background-color, transform, width, height;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  width: 528px;
+  height: 581px;
+  padding: 40px;
+  background-color: var(--color-main);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+  transform: translate(-50%, -50%);
+  transition: transform 500ms;
+}
